@@ -1,0 +1,43 @@
+:root {
+  --color-primary-pink: hsl(322, 100%, 66%);
+
+  --color-secondary-very-pale-cyan: hsl(193, 100%, 96%);
+  --color-secondary-very-dark-cyan: hsl(192, 100%, 9%);
+  --color-secondary-grayish-blue: hsl(208, 11%, 55%);
+
+  --font-family1: "Poppins", sans-serif; //Headings
+  --font-family2: "Open Sans", sans-serif; //Body, Call-to-actions
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 144rem;
+
+  @media (max-width: 990px) {
+    width: 375px;
+  }
+}
